@@ -6,7 +6,10 @@ def my_collect(array)
   new_array.push yield (array[i])
     i += 1
   end
-  
+  new_array
 end
+
+  my_collect(collection) {|i| i.split(" ").first}
+
 
 
